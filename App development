@@ -1,0 +1,30 @@
+onEvent("get_started", "click", function( ) {
+  setScreen("screen2");
+});
+onEvent("back", "click", function( ) {
+  setScreen("screen1");
+});
+onEvent("give_input", "click", function( ) {
+  setScreen("screen3");
+});
+onEvent("see_input", "click", function( ) {
+  setScreen("screen6");
+});
+onEvent("move_to_4", "click", function( ) {
+  setScreen("screen4");
+});
+onEvent("save_move_5", "click", function( ) {
+  setScreen("screen5");
+});
+onEvent("button4", "click", function( ) {
+  setScreen("screen1");
+});
+var location = getText("text_input2");
+var duration = getText("text_input1");
+var weight = getText("text_input3");
+if (getChecked("checkbox5")) {
+  setText("id", "text");
+}
+drawChart("chart1", "bar", [
+	({ lable: "location", value: location }),
+	({ label: "duration", value: duration })]);
